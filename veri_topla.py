@@ -11,8 +11,8 @@ hands = mp_hands.Hands(min_detection_confidence=0.7, min_tracking_confidence=0.7
 
 actions = [
     'Merhaba', 'Evet', 'Hayir', 'Tesekkurler', 'Lutfen', 
-    'Nasilsin', 'Iyiyim', 'Yardim', 'Ben', 'Sen',
-    'Dur', 'Tamam', 'Bekle', 'Sevmek', 'Gorusuruz' 
+    'Nasilsin', 'Iyiyim', 'Yardim', 'Ben', 'Sen', 
+    'Dur', 'Tamam', 'Bekle', 'Sevmek', 'Gorusuruz'
 ]
 
 DATA_PATH = os.path.join('Veri_Seti') 
