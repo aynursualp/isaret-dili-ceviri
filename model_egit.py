@@ -18,7 +18,7 @@ actions = np.array([
 model = Sequential()
 
 #ilk katman 30 kare (zaman adımı) ve 63 koordinat
-model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(30, 63)))
+model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(30, 63))) #64 nöron var, her bir kare için analiz sonrakine gönderiliyor
 model.add(Dropout(0.2)) #nöronların %20 sini kapatarak overfittingi engellemek için
 
 model.add(LSTM(128, return_sequences=True, activation='relu'))
