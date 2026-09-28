@@ -40,7 +40,7 @@ while True:
 
         #hafızaya ekle
         sequence.append(keypoints)
-        sequence = sequence[-30:]
+        sequence = sequence[-30:] #yeni görüntü aldıkça en eskiyi unutup en yeniyi hafızaya alır
 
         if len(sequence) == 30:
             #veriyi (1, 30, 63) formatında besle
