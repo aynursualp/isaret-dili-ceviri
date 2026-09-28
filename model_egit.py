@@ -39,7 +39,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['categ
 print("Model mimarisi hazırlandı, eğitime başlanıyor..")
 
 #model test verisinde 15 tur boyunca iyileşme göstermezse eğitimi kes ve en iyi ağırlıkları geri yükle
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
+es = EarlyStopping(monitor='val_loss', patience=15, restore_best_weights=True)
 
 history = model.fit(X_train, y_train,
                     epochs=150,
